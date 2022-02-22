@@ -1,0 +1,165 @@
+/* ESTILOS GENERALES */
+*{
+    padding: 1%;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+    min-height: 100vh;
+}
+
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    transition: .4s all ease-in-out;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,
+h2,
+h3{
+    font-weight: 400;
+    color: #6B2617;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+
+.image-responsive{
+    max-width: 100%;
+    width: 100%;
+}
+/* ESTILOS GENERALES */
+
+/* HEADER */
+.header-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.main-menu{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logotipo{
+    width: 150px;
+    
+}
+
+.menu-link-desktop,
+.menu-link-mobile{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-link-mobile{
+    display: none;
+}
+
+.links-menu{
+    padding: 0 55px;
+    line-height: 70px;
+    height: 70px;
+    display: block;
+    color: #6B2617;
+    transition: .4s all ease-in-out;
+}
+
+.links-menu:hover:not(.cta-btn){
+    box-shadow: 0 -1px 0 0 #6B2617 inset;
+    transform: scale(.95);
+}
+
+.cta-btn{
+    font-weight: 700;
+    background-color: #6B2617;
+    color: #fff;
+    line-height: 65px;
+    height: 65px;
+    width: 80px;
+    padding: 41 50 20 200;
+    border-radius: 18px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 1);
+    transition: .4s all ease-in-out;
+}
+
+.cta-btn:hover{
+    transform: scale(.85);
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width:820){
+    .logotipo{
+        text-align: center;
+        margin: auto;
+        padding: 1rem 0;
+        width: 100%;
+    }
+        
+    .logotipo img{
+        position: relative;
+        top: 5px;
+    }
+
+    .menu-link-desktop{
+        display: none;
+    }
+
+    .menu-link-mobile{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        background-color: #6B2617;
+        width: 100%;
+        box-shadow: 0 -1px 20px 0 rgba(0, 0, 0, 1);
+    }
+
+    .links-menu{
+        font-size: 14px;
+    }
+
+    .cta-btn{
+        line-height: 35px;
+        height: 35px;
+    }
+}
